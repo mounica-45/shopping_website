@@ -1,0 +1,35 @@
+@use './variables' as *;
+@use './header' as *;
+
+
+$bg-color: #ffffff;
+$font-family: 'Poppins', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; 
+ 
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  margin: 0;
+  // margin-top: 60px;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
