@@ -10,7 +10,18 @@ import Info from './components/Info.vue';
 import Footer from './components/Footer.vue';
 import Signup from './components/Signup.vue';
 
+<<<<<<< HEAD
 import { ref,watch } from 'vue'
+=======
+import { ref,watch } from 'vue';
+
+const isNavOpen = ref(false);
+
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
+};
+
+>>>>>>> fe49d65 (responsive for all screens)
 
 const showSignupModal = ref(false)
 
@@ -25,6 +36,7 @@ watch(showSignupModal, (newVal) => {
 
 <template>
   <div class="card">
+<<<<<<< HEAD
     <header class="header">
       <div class="header__logo">
         <img :src="logo" alt="fashionLogo" class="logo_image" />
@@ -41,6 +53,30 @@ watch(showSignupModal, (newVal) => {
         </ul>
       </nav>
     </header>
+=======
+    <header class="header" :class="{ 'open__nav': isNavOpen }">
+    <div class="header__logo">
+      <img :src="logo" alt="fashionLogo" class="logo_image" />
+    </div>
+    <!-- Hamburger menu icon on the right -->
+    <div class="hamburger-menu" @click="toggleNav">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><RouterLink to="/">Catalogue</RouterLink></li>
+        <li class="header__nav-item"><RouterLink to="/fashion">Fashion</RouterLink></li>
+        <li class="header__nav-item"><RouterLink to="/favourite">Favourite</RouterLink></li>
+        <li class="header__nav-item"><RouterLink to="/lifestyle">Lifestyle</RouterLink></li>
+        <li class="header__nav-item">
+          <a href="#" class="button-link" @click.prevent="openSignupModal">Signup</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+>>>>>>> fe49d65 (responsive for all screens)
     <Signup v-if="showSignupModal" @close="showSignupModal = false" />
 
 
