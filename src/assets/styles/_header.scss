@@ -261,10 +261,10 @@
   height: auto; /* Let content dictate height */
   border-radius: 0;
   width: 100%;
-  padding: 2rem 1rem; /* Add some internal spacing */
+  padding: 2rem 4rem; /* Add some internal spacing */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   text-align: center;
 }
 .paysaleBanner{
@@ -273,6 +273,7 @@
   height: auto;
   margin-bottom: 1rem;
   &_text{
+    margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
@@ -738,14 +739,28 @@
   .content_banner {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 100px;
+     padding: 0 180px;
     gap: 40px;
   }
 
-  .content_text {
-    font-size: 38px;
-    text-align: left;
+ .content.pay > div{
+  padding: 0 180px;
+  flex-direction: row;
+    flex-wrap: wrap;
+ }
 
+  .content_text {
+            font-size: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: -85px;
+
+  }
+  .content.pay > div > div{
+    margin-left: 15px;
+    // text-align: center;
   }
   
 
