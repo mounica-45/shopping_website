@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: var(--black);
+  font-size: 18px;
+  padding-left: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+}
+
+a {
+  color: var(--dark);
+  text-decoration: underline;
+  font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}

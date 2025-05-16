@@ -18,7 +18,7 @@ const favourites=[
 
 <template>
     <div class="poster">
-      <h3 class="poster_text">Young’s Favourite</h3>
+      <h3>Young’s Favourite</h3>
       <div class="poster_img favourite_img">
       <div 
         class="poster_card favourite_card" 
@@ -29,7 +29,7 @@ const favourites=[
 
         <div class="poster_info">
           <div class="poster_text_group">
-            <h4 class="poster_title">{{ item.title }}</h4>
+            <h4 class="poster_title favourite_text">{{ item.title }}</h4>
             <p class="poster_subtext">{{ item.subtext }}</p>
           </div>
           <span class="arrow_icon">&#8594;</span>

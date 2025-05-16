@@ -24,7 +24,7 @@ const posters = [
 
 <template>
   <div class="poster">
-    <h3 class="poster_text">NEW ARRIVALS</h3>
+    <h3>NEW ARRIVALS</h3>
     <div class="poster_img">
       <div 
         class="poster_card" 
@@ -45,3 +45,5 @@ const posters = [
     </div>
   </div>
 </template>
+
+

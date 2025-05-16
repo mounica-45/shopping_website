@@ -1,0 +1,68 @@
+@use '../base/mixins' as *;
+
+.modal{
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+  &_content{
+    position: relative;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  &_heading{
+    text-align: center;
+    font-weight: bold;
+  }
+  &_close_icon{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  &_form{
+    @include flex-items;
+    gap: 1rem;
+    &_group{
+     @include flex-items;
+      &_label{
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+      }
+      &_input{
+        padding: 0.5rem;
+        border: 1px solid #c2c8da;
+        border-radius: 6px;
+        width: 100%;
+        height:45px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &_form_actions{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.error_text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}

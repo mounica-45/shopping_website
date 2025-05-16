@@ -1,0 +1,88 @@
+@use '../base/mixins' as *;
+
+.content{
+    width:92%;
+  &__banner {
+    @include flex;
+    // padding: 0 120px;
+    justify-content: space-between;
+    // height: 100%;
+    padding: 0 10px;
+    flex-wrap: no-wrap; 
+    // gap: 40px;
+  }
+}
+
+.pay{
+  @include flex_items;
+  background-color:var(--pay-color) !important;
+  border-radius: 0;
+  width: 100%;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.paysaleBanner{
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+
+  &_text{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    
+  }
+
+  &_date{
+   color: var(--black);
+   font-weight: bold;
+   font-size: 1.1rem;
+   padding: 10px 0;
+  }
+}
+
+.content_text_block_elemm{
+  @include block_elem;
+  font-weight: 400;
+}
+
+.content__image{
+  // height: 418px;
+  // padding-right: 55px;
+  object-fit: cover;
+}
+
+.image-with-stars {
+  position: relative;
+  display: inline-block;
+}
+
+.star {
+  position: absolute;
+  font-size: clamp(32px, 5vw, 44px);
+  color: white;
+}
+
+.top-left {
+  top: 50px;
+  left: 50px;
+}
+
+.top-right {
+  top: 30px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 80px;
+  left: 50px;
+}
+
+.bottom-right {
+  bottom: 3px;
+  right: 20px;
+}

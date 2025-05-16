@@ -3,7 +3,7 @@ import social_media_icon from '../assets/images//social_media_icon.png'
 </script>
 <template>
     <section class="footer_content">
-      <div class="footer_content_banner">
+        <div class="footer_content_banner">
             <!-- Left Column -->
             <div class="footer_content_left">
                 <p class="footer_content_text_heading">FASHION</p>
@@ -25,7 +25,6 @@ import social_media_icon from '../assets/images//social_media_icon.png'
                     <p class="footer_subheading">Careers</p>
                 </div>
 
-    
                 <div class="footer_column">
                     <p class="footer_heading">Quick Link</p>
                     <p class="footer_subheading">Share Location</p>
@@ -34,16 +33,13 @@ import social_media_icon from '../assets/images//social_media_icon.png'
                     <p class="footer_subheading">FAQs</p>
                 </div>
 
-    
                 <div class="footer_column">
                     <p class="footer_heading">Legal</p>
                     <p class="footer_subheading">Terms & conditions</p>
                     <p class="footer_subheading">Privacy Policy</p>
                 </div>
             </div>
-      
-
-      </div>
+        </div>
     </section>
   </template>
   

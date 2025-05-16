@@ -1,0 +1,80 @@
+@mixin flex_items{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center_column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flex-base {
+   @include flex;
+    justify-content: space-between;
+   
+}
+
+@mixin flex-wrap{
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+@mixin flex-between-center {
+    @include flex-base;
+    @include flex-wrap;
+}
+
+@mixin flex-wrapper {
+    @include flex-center;
+    @include flex-wrap;
+}
+
+@mixin flex-center-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin flex-evenly{
+    @include flex;
+    justify-content: space-evenly;
+}
+
+
+@mixin flex-card($flex: 1 1 calc(33.333% - 20px), $max-width: 400px, $direction: column, $align: center) {
+  flex: #{$flex};
+  max-width: #{$max-width};
+  display: flex;
+  flex-direction: #{$direction};
+  align-items: #{$align};
+}
+
+
+@mixin block_elem{
+    display: block;
+}
+
+@mixin inline_elem{
+    display: inline;
+}
+
+
+

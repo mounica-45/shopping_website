@@ -1,0 +1,190 @@
+@use 'mixins' as *;
+
+.card {
+  @include flex-center_column;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+// Header SCSS
+.header {
+  @include flex;
+  justify-content: space-between;
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 98%;
+  height: 60px;
+  color: var(--text-color);
+  padding: 0 2rem;
+  margin-top: 20px; 
+  
+  &__logo {
+    @include flex;
+  }
+
+  .logo_image {
+    height: 30px;
+    width: auto;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav-item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    margin-left: 55px;
+    font-weight: 300;
+
+    &:hover {
+      color: var(--link-hover-color);
+    }
+  }
+
+  @media (max-width: 768px) {
+    @include flex-between;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem; 
+    
+    &__nav-list {
+      flex-direction: column;
+      display: none;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .hamburger-menu {
+      @include flex_items;
+      gap: 5px;
+      cursor: pointer;
+      margin-left: auto; 
+      margin-top:-25px;
+    }
+
+    .hamburger-menu div {
+      width: 25px;
+      height: 3px;
+      background-color: var(--text-color);
+      border-radius: 5px;
+    }
+    
+    &.open__nav .header__nav-list {
+      margin-top: 30px;
+      display: flex; 
+    }
+  }
+}
+
+// spacing for each component
+.section_spacing{
+  margin-top: 30px;
+}
+
+// 1St Section Content
+.content {
+  background-color: var(--content-bg-color);
+  width: 92%;
+  height: 450px;
+  border-radius: 50px;
+  margin: 0 auto; 
+  padding: 40px 50px;
+    
+  &_banner {
+    @include flex-between-center;
+    padding: 0 120px;
+    }
+  
+    &_text {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 1.2;
+      
+      &_block_elem {
+        @include block_elem;
+        color: var(--black);
+        font-weight: 600;
+      }
+
+      &_inline_elem {
+        @include inline_elem;
+        font-weight: 400; 
+        font-size: 14px; 
+        color:var(--banner-text-color);  
+      }
+    }
+  
+    &_image {
+      height: 350px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+   
+}
+
+.unique_color{
+  background-color: var( --unique-text-color);
+  transition: border 0.3s ease;
+  width:205px;
+  padding: 4px 10px; 
+  
+}
+
+.white_color{
+  padding: 5px 5px;
+  width:205px;
+  position: relative;
+  z-index: 1;
+}
+
+.white_color::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  border-radius: 8px;
+  transform: rotate(-3deg); 
+}
+
+.fashion{
+  display: flex;
+
+  &_fashion_text{
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  

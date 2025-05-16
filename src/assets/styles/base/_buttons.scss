@@ -1,0 +1,68 @@
+.button-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--black);
+    color: var(--white) !important;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--black);
+    }
+  }
+
+.modal_submit_btn{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal_close_btn{
+    background:var(--modal_danger_btn_color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content_button {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--button-bg-color); 
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:25px;
+    
+    &:hover {
+        background-color: var(--button-hover-color, #222);
+    }
+}
+
+.info_button {
+    position: absolute;
+    top: 50%;
+    right: 5px; // inside input
+    transform: translateY(-50%);
+    height: 26px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--info-button-color);
+    color: var(--info-text-color);
+    cursor: pointer;
+    font-size: 12px;
+}

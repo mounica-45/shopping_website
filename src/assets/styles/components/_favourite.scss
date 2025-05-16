@@ -1,0 +1,23 @@
+.favourite_img{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important; 
+//   gap:20px !important;
+  width:100%!important;        
+ 
+}
+.favourite_card{
+  flex: 1 1 calc(50% - 20px) !important; 
+  max-width: 650px !important;
+  max-height: auto !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.favourite_card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}

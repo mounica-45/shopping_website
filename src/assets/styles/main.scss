@@ -1,5 +1,18 @@
-@use './variables' as *;
-@use './header' as *;
+@use './base/variables' as *;
+@use './base/header' as *;
+@use './base/typography' as *;
+@use './base/buttons' as *;
+@use './base/mixins' as *;
+@use './components/paysale' as *;
+@use './components/arrivals' as *;
+@use './components/footer' as *;
+@use './components/banner' as *;
+@use './components/signup' as *;
+@use './components/favourite' as *;
+@use './components/fashion' as *;
+@use './components/info.scss' as *;
+@use './base/mediaquery' as *;
+
 
 
 $bg-color: #ffffff;

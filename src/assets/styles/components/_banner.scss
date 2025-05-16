@@ -1,0 +1,18 @@
+@use '../base/mixins' as *;
+
+.logos_section {
+    @include flex-wrapper;
+    width: 100%;
+    gap:70px !important;
+    margin: 0 auto; 
+    padding: 20px 0;
+    background-color: var(--unique-text-color);
+  }
+
+  .logos_wrapper {
+    @include flex-center;
+    width: 100%;
+  }
+  .logos_section_img {
+    transform: scale(0.8);
+  }
